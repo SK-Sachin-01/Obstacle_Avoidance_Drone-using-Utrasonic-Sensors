@@ -60,3 +60,22 @@ The transmitter is a handheld device used by the pilot to control the drone. It 
 
 ### 8. Frame
 The drone frame provides the structural support for all the components. It is typically made of lightweight materials such as carbon fiber or plastic to minimize weight while ensuring durability.
+
+## Software Used
+### Arduino IDE
+The Arduino Integrated Development Environment (IDE) is used to write, compile, and upload code to the Arduino board. It provides a user-friendly interface and a robust set of libraries for interfacing with various sensors and components.
+
+#### Key Features:
+**Sketches**: Arduino programs are called sketches. These are written in a simple, C++ based language.
+**Libraries**: The IDE includes numerous libraries for working with different hardware components, including UltraSonic sensors.
+**Serial Monitor**: Allows real-time monitoring and debugging of the Arduino’s outputs and inputs.
+**Code Upload**: Facilitates uploading the written code to the Arduino board via a USB connection.
+
+### Mission Planner
+Mission Planner is a ground control station software used for configuring and controlling drones with the Pixhawk flight controller. It provides comprehensive tools for mission planning, real-time monitoring, and parameter adjustment.
+
+#### Key Features:
+**Flight Planning**: Create and upload waypoint missions to the drone.
+**Real-time Telemetry**: Monitor the drone’s status, including GPS location, altitude, speed, and battery levels.
+**Parameter Configuration**: Adjust various flight parameters and settings for optimal drone performance.
+**Firmware Updates**: Easily update the firmware of the Pixhawk flight controller.
