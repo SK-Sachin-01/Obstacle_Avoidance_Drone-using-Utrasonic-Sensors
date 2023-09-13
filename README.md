@@ -79,3 +79,25 @@ Mission Planner is a ground control station software used for configuring and co
 **Real-time Telemetry**: Monitor the drone’s status, including GPS location, altitude, speed, and battery levels.
 **Parameter Configuration**: Adjust various flight parameters and settings for optimal drone performance.
 **Firmware Updates**: Easily update the firmware of the Pixhawk flight controller.
+
+
+## Working of the Drone
+The drone is equipped with three UltraSonic sensors placed at the front, left, and right sides. These sensors continuously monitor the surroundings to detect obstacles. The working process is as follows:
+
+### Sensor Placement
+- **Front Sensor**: Detects obstacles in front of the drone.
+- **Left Sensor**: Detects obstacles to the left of the drone.
+- **Right Sensor**: Detects obstacles to the right of the drone.
+
+### Obstacle Detection and Avoidance Logic
+1. **Distance Calculation**:
+The Arduino calculates the distance to obstacles using the UltraSonic sensors. It sends out an ultrasonic pulse and measures the time it takes for the echo to return. This time is used to calculate the distance.
+
+2. **Obstacle Avoidance**:
+
+- The Arduino processes the distances from all three sensors.
+- If an obstacle is detected within a predefined maximum distance (100 cm) in front of the drone, it checks the right and left sensors to determine the best avoidance maneuver.
+- If obstacles are detected on both sides also, the drone performs a rotation.
+- If only the right side is clear, the drone moves right.
+- If only the left side is clear, the drone moves left.
+- If no obstacles are detected, the drone continues to move forward.
