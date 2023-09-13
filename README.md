@@ -101,3 +101,7 @@ The Arduino calculates the distance to obstacles using the UltraSonic sensors. I
 - If only the right side is clear, the drone moves right.
 - If only the left side is clear, the drone moves left.
 - If no obstacles are detected, the drone continues to move forward.
+
+---
+
+Happy flying! 🚁
