@@ -28,9 +28,7 @@ The receiver detects the reflected pulse and converts it into an electrical sign
 5. **Distance Calculation**:
 The control circuit measures the time interval between the emission of the pulse and the reception of the echo. The distance to the obstacle is calculated using the formula:
 
-\[
-\text{Distance} = \frac{\text{Speed of Sound} \times \text{Time}}{2}
-\]
+                    Distance = ((Speed of Sound) X (Time))/2
 ​
 This formula accounts for the round-trip travel time of the ultrasonic pulse.
 
